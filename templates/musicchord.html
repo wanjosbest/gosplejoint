@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Chord Analysis</title>
+</head>
+<body>
+    <h1>Music Analysis</h1>
+    
+    {% if error_message %}
+        <p style="color: red;">Error: {{ error_message }}</p>
+    {% endif %}
+
+    <p><strong>Key Name:</strong> {{ key_name }}</p>
+    <p><strong>Chords:</strong> {{ chord}}
+</body>
+</html>

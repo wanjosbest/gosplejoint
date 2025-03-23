@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+
+
+<body>
+    <img src="{{userdetails.image.url}}" alt="" style="height: 300px; width: 300px;"><br>
+
+    <label for="">Name</label>
+    <h4>{{userdetails.first_name}} {{userdetails.last_name}}</h4>
+    <!-- <label for="">Referal Link</label>
+    <a href="{{referal_link}}">{{referal_link}}</a>-->
+    <label for="">WALLET BALANCE</label> 
+    <h2>{{userdetails.referal_wallet}}</h2>
+
+    <label for="">Reffered By </label>
+    <h2>{{userdetails.reffered_by}}</h2>
+    <label for=""> Songs</label>
+    <h2> <a href="{% url "songs" userdetails.username %}"> Songs</a></h2>
+
+
+
+</body>
+
+</html>
